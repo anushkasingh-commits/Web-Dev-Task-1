@@ -11,7 +11,7 @@ export default function App() {
   useEffect(() => {
     async function APICall() {
       console.log("Hi, Anushka!")
-      let response = await fetch("http://localhost:3000/api/products")
+      let response = await fetch("https://web-dev-task-1-oehp.onrender.com/api/products")
       let data = await response.json();
       console.log(data);
       setProducts(data);
